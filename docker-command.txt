@@ -1,0 +1,6 @@
+#v옵션 지정시 한쪽경로만 부여할 경우 매핑하지 않음
+#d옵션 줄경우 detach (빠져나옴)
+docker run -p 5000:8080 -v /usr/src/app/node_modules -v ${pwd}:/usr/src/app sin9173/nodejs
+
+#t옵션으로 이름지정 
+docker build -t sin9173/nodejs ./
